@@ -11,3 +11,13 @@ vite.config.ts.timestamp-*
 
 /src-tauri/target
 /src-tauri/WixTools
+
+.idea/
+
+.yarn/
+
+.pnp.cjs
+
+.pnp.loader.mjs
+
+yarn.lock

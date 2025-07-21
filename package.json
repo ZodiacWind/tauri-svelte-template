@@ -38,5 +38,6 @@
 		"plugins": [
 			"prettier-plugin-svelte"
 		]
-	}
+	},
+	"packageManager": "yarn@4.9.2"
 }

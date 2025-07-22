@@ -21,3 +21,5 @@ vite.config.ts.timestamp-*
 .pnp.loader.mjs
 
 yarn.lock
+
+src-tauri/Cargo.lock

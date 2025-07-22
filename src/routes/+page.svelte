@@ -9,12 +9,12 @@
 </script>
 
 <h1>Svelte Template</h1>
-<p>Edit <code>src/App.svelte</code> to trigger HMR</p>
+<p>Edit <code>src/routes/+page.svelte</code> to trigger HMR</p>
 <p>Counter: <code>{count}</code></p>
-
+<img src="/tauri-svelte-template.png" alt="Tauri Svelte Template" height="300">
 <style lang="sass">
 	:global(body)
-		margin: 100px 0px
+		margin: 10px 0px
 		font-family: Arial, Helvetica, sans-serif
 		font-size: 18px
 		background-color: #111318

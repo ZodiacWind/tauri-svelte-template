@@ -1,57 +1,56 @@
 {
-	"package": {
-		"productName": "Tauri SvelteKit Template"
-	},
-	"build": {
-		"distDir": "../build",
-		"devPath": "http://localhost:3000",
-		"beforeDevCommand": "npm run dev:web",
-		"beforeBuildCommand": "npm run build:web"
-	},
-	"tauri": {
-		"bundle": {
-			"active": true,
-			"targets": ["dmg", "deb", "appimage", "msi"],
-			"identifier": "com.example.tauri-sveltekit-template",
-			"icon": [
-				"icons/32x32.png",
-				"icons/128x128.png",
-				"icons/128x128@2x.png",
-				"icons/icon.icns",
-				"icons/icon.ico"
-			],
-			"resources": [],
-			"externalBin": [],
-			"copyright": "© 2022 Tauri SvelteKit Template",
-			"category": "DeveloperTool",
-			"shortDescription": "",
-			"longDescription": "",
-			"deb": {
-				"depends": []
-			},
-			"macOS": {
-				"frameworks": [],
-				"minimumSystemVersion": "10.13",
-				"exceptionDomain": "",
-				"signingIdentity": null,
-				"entitlements": null
-			},
-			"windows": {
-				"certificateThumbprint": null,
-				"digestAlgorithm": "sha256",
-				"timestampUrl": ""
-			}
-		},
-		"updater": {
-			"active": false
-		},
-		"allowlist": {
-			"shell": {
-				"open": true
-			}
-		},
-		"security": {
-			"csp": null
-		}
-	}
+  "bundle": {
+    "active": true,
+    "targets": [
+      "dmg",
+      "deb",
+      "appimage",
+      "msi"
+    ],
+    "windows": {
+      "certificateThumbprint": null,
+      "digestAlgorithm": "sha256",
+      "timestampUrl": ""
+    },
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "resources": [],
+    "externalBin": [],
+    "copyright": "© 2025 Tauri SvelteKit Template",
+    "category": "DeveloperTool",
+    "shortDescription": "",
+    "longDescription": "",
+    "macOS": {
+      "frameworks": [],
+      "minimumSystemVersion": "10.13",
+      "exceptionDomain": "",
+      "signingIdentity": null,
+      "entitlements": null
+    },
+    "linux": {
+      "deb": {
+        "depends": []
+      }
+    }
+  },
+  "build": {
+    "beforeBuildCommand": "yarn build:web",
+    "frontendDist": "../build",
+    "beforeDevCommand": "yarn dev:web",
+    "devUrl": "http://localhost:3000"
+  },
+  "productName": "Tauri SvelteKit Template",
+  "mainBinaryName": "Tauri SvelteKit Template",
+  "identifier": "com.zodiacwind.tauri-sveltekit-template",
+  "plugins": {},
+  "app": {
+    "security": {
+      "csp": null
+    }
+  }
 }

@@ -15,7 +15,7 @@
 1. Install Node.js
 2. Install Rust
 3. Follow the [Tauri setup guide](https://tauri.app/v1/guides/getting-started/setup)
-4. Run `npm install`
+4. Run `npm install` or `yarn`
 5. Find and replace the text `tauri-sveltekit-template` and `Tauri SvelteKit Template`.
 
 ### Commands
@@ -30,3 +30,11 @@
 3. Run `cargo check` to update `Cargo.lock`
 4. Create a git tag in the format `v#.#.#`
 5. Add release notes to the generated GitHub release and publish it
+
+
+# FAQ
+1. Yarn国内源配置：
+
+    ```
+    yarn config set npmRegistryServer https://registry.npmmirror.com/
+   ```
